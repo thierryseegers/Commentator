@@ -55,7 +55,7 @@ void print_double(int const i)
 
 int main()
 {
-	/* Calls the print_double function with 22, 33 and 44 as arguments. */
+    /* Calls the print_double function with 22, 33 and 44 as arguments. */
     print_double(22);
     print_double(33);
     print_double(44);
@@ -83,7 +83,7 @@ int main()
 
 
 
-	/* Calls the print_double function with 22, 33 and 44 as arguments. */
+    /* Calls the print_double function with 22, 33 and 44 as arguments. */
 ```
 
 If the amount of whitespace throws you off, you can use the `--compress` argument but then you lose the flow produced by the indentation.
