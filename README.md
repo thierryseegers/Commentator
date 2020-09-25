@@ -29,8 +29,10 @@ Afterwards, follow the short set up instructions found on [this](https://eli.the
 ### Arguments
 
 - `paths`: Path(s) to file(s), folder(s) or a [glob expression](https://en.wikipedia.org/wiki/Glob_(programming)). All files with extensions typical of C or C++ headers and source will be analyzed.
-- `-c`, `--compress`: Leave no holes between comments and left justify comments.
+- `-c`, `--compress`: Leaves no newlines between comments preserving their indentation.
 - `-d`, `--dry-run`: Analyze input source file(s) but produce no output file(s). Useful when combined with `--stats`.
+- `-l`, `--left-justify`: Justifies all coments to the left.
+- `-p`, `--parallel`: Runs on many processes as there are cores to accalerate the analysis of large sets of files.
 - `-r`, `--recursive`: If path(s) given is a/are folder(s), recursively analyze all the files in the folder(s).
 - `-s`, `--stats`: Prints the percentage of lines that contain comments, per file and for all files.
 
@@ -86,7 +88,7 @@ int main()
     /* Calls the print_double function with 22, 33 and 44 as arguments. */
 ```
 
-If the amount of whitespace throws you off, you can use the `--compress` argument but then you lose the flow produced by the indentation.
+If the amount of whitespace throws you off, you can use the `--compress` and/or the `--left-justify` arguments but then you lose the flow produced by the spacing and/or indentation.
 In the committed files, you'll see examples of more pathological cases of comments that are correctly processed with respect to whitespace.
 
 The file's extensions are preserved so that the output files can be opened in an IDE and the comments' colorization remain as one is used to.
