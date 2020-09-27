@@ -8,7 +8,7 @@ Then we judge them on what they have written with rules like "Explain the why, n
 
 I still don't have a perfect answer but here's a different approach: "Do your comments tell a story?"
 If we were to strip your source file of all its code and retain only the comments, could we read what's left and still understand what is going on?
-Of course, we wouldn't exactly expect a coherent story but I think it's a avenue worth exploring.
+Of course, we wouldn't exactly expect a coherent story but I think it's an avenue worth exploring.
 
 OK, so how *do* you strip a source file of its code? You could use your imagination... or you could use software. Enter `commentator`.
 
@@ -32,7 +32,7 @@ Afterwards, follow the short set up instructions found on [this](https://eli.the
 - `-c`, `--compress`: Leaves no newlines between comments preserving their indentation.
 - `-d`, `--dry-run`: Analyze input source file(s) but produce no output file(s). Useful when combined with `--stats`.
 - `-l`, `--left-justify`: Justifies all coments to the left.
-- `-p`, `--parallel`: Runs on many processes as there are cores to accalerate the analysis of large sets of files.
+- `-p`, `--parallel`: Runs on many processes as there are cores to accelerate the analysis of large sets of files.
 - `-r`, `--recursive`: If path(s) given is a/are folder(s), recursively analyze all the files in the folder(s).
 - `-s`, `--stats`: Prints the percentage of lines that contain comments, per file and for all files.
 
